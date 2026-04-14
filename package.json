@@ -1,0 +1,46 @@
+{
+  "name": "instagram",
+  "version": "1.0.0",
+  "description": "xplatform instagram app using electron",
+  "main": "main.js",
+  "homepage": "",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "author": {
+    "name": "justhafizh",
+    "email": "mhafizh7121@gmail.com"
+  },
+  "license": "ISC",
+  "build": {
+      "appId": "com.justhafizh.instagram",
+      "productName": "Instagram",
+      "files": [
+        "**/*",
+        "!node_modules/.cache"
+      ],
+      "win": {
+        "target": "nsis",
+        "icon": "assets/instagram-icon.ico"
+      },
+      "mac": {
+        "target": "dmg",
+        "icon": "assets/instagram-icon.icns"
+      },
+      "linux": {
+        "target": "deb",
+        "icon": "assets/instagram-icon.png",
+        "category": "Network"
+      }
+    },
+  "devDependencies": {
+    "electron": "^41.2.0",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}
