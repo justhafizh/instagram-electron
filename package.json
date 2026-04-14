@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "xplatform instagram app using electron",
   "main": "main.js",
-  "homepage": "",
+  "homepage": "https://github.com/justhafizh/instagram-electron",
   "scripts": {
     "start": "electron .",
     "build:win": "electron-builder --win",
